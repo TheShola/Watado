@@ -1,0 +1,43 @@
+{
+  "name": "watado",
+  "version": "1.0.0",
+  "description": "a real time reviews app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently --kill-others \"npm run webpack-watch\" \"npm run express-server\"",
+    "webpack-watch": "./node_modules/webpack/bin/webpack.js -w",
+    "express-server": "node ./server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheShola/Watado.git"
+  },
+  "author": "Adesola Abimbola",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheShola/Watado/issues"
+  },
+  "homepage": "https://github.com/TheShola/Watado#readme",
+  "dependencies": {
+    "babel-loader": "^6.2.2",
+    "babel-plugin-transform-class-properties": "^6.4.0",
+    "babel-plugin-transform-runtime": "^6.4.3",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "babel-register": "^6.4.3",
+    "express": "^4.13.4",
+    "file-loader": "^0.11.2",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-preset-env": "^1.6.0",
+    "concurrently": "^3.5.0",
+    "webpack": "^2.7.0",
+    "webpack-dev-server": "^2.6.1"
+  }
+}
