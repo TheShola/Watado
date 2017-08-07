@@ -1,7 +1,7 @@
 module.exports = {
   entry: './src/client.js',
   output: {
-    path: '/Users/Shola/Documents/WATADO/public',
+    path: '/Users/Shola/Documents/WATADO/Watado/public',
     filename: 'bundle.js'       
   },
   module: {
